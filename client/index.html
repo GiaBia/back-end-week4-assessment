@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Back End Assessment</title>
+</head>
+
+<body class="container">
+  <button id="complimentButton">Get a compliment</button>
+
+  <button id="fortuneButton">Get a fortune</button>
+
+  <button id="addComplimentButton">Add a compliment!</button>
+  <input type="text" id="addCompliment"></input>
+
+
+  <!-- noticed halfway through that creating a form helps with a11y, next time I would go back and change my other methods into form -->
+  <form id="changeOrDeleteCompliment">
+    <label for="compliments">Choose a compliment to change:</label>
+    <select name="current-compliments" id="complimentsDropdown"></select>
+    <input type="text" id="changeCompliment" name="complimentValue"></input>
+    <button id="changeComplimentButton">Change compliment</button>
+    <button id="deleteComplimentButton">Remove compliment</button>
+  </form>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
